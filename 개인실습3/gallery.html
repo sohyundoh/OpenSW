@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+  <link rel = "stylesheet" href="html.css">
+<head>
+<style>
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.row_flex{
+  display: flex;
+  flex-direction: row;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+}
+.column_flex {
+  display: flex;
+  flex-direction: column;
+  width: 3000px;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Image Gallery</h2>
+
+
+<div class="row_flex">
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="IMG_1030.jpeg">
+        <img src="IMG_1030.jpeg" alt="SKY" width="600" height="400">
+      </a>
+      <div class="desc">하늘을 찍는 것을 좋아합니다. 🌥️</div>
+    </div>
+  </div>
+
+  <div class="column_flex">
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="IMG_1361.JPG">
+          <img src="IMG_1361.JPG" alt="Award" width="600" height="400">
+        </a>
+        <div class="desc">올해 여름 소프트웨어 중심대학 해커톤에서 팀장 겸 백엔드 개발자로 참가하여 특별상을 수상하였습니다 🏆</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="sky.png">
+          <img src="sky.png" alt = "sky" width="600" height="400">
+        </a>
+        <div class="desc">학교 옆 버스 정류장에서 보는 하늘을 즐겨 찍습니다! 🌥️</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="IMG_3598.jpeg">
+        <img src="IMG_3598.jpeg" alt="삼척바다" width="600" height="400">
+      </a>
+      <div class="desc">올해 여름 여행으로 삼척을 다녀왔는데, 너무 좋았습니다 🌊</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="IMG_4466.jpeg">
+        <img src="IMG_4466.jpeg" alt="롯데월드" width="600" height="400">
+      </a>
+      <div class="desc">지지난주 공강날에 친구들과 함께 롯데월드를 다녀오면서 찍은 사진입니다 🎢</div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
